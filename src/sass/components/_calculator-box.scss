@@ -1,0 +1,197 @@
+.calculator-box {
+  padding-top: 74px;
+
+  & .calculator-box-bi .home-bi,
+  .home-bi-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  & .calculator-box-bi .home-bi {
+    display: none;
+  }
+}
+
+.calculator-info {
+  position: absolute;
+  top: -70px;
+  right: 20px;
+
+  & .title-mobile {
+    margin: 0;
+    color: #706f6f;
+    font-size: 19px;
+    font-weight: $Regular;
+    line-height: 22px;
+    text-transform: uppercase;
+
+    & strong {
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+}
+
+.calculator-content {
+  margin-top: 22px;
+
+  & .nav-header-desc {
+    display: none;
+  }
+
+  & .calculator-slider-box {
+    & .calculator-slider-price,
+    .calculator-slider-day {
+      & .calculator-slider-info {
+        display: flex;
+        align-items: flex-end;
+        color: $green-color;
+        font-size: 26px;
+        font-weight: 700;
+
+        & label {
+          margin: 0;
+          display: block;
+          margin-right: auto;
+          text-transform: uppercase;
+        }
+
+        & input {
+          border: 0;
+          width: 90px;
+          height: 36px;
+          border-radius: 8px;
+          text-align: center;
+          margin: 0 10px 5px 0;
+          color: $orange-color;
+          font-size: 34px;
+          font-weight: 900;
+          line-height: 36px;
+          text-transform: uppercase;
+          background-color: rgba(0, 0, 0, 0.05);
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        & span {
+          width: 40px;
+        }
+      }
+    }
+
+    & .slider-scroll {
+      border: 0;
+      border-radius: 0;
+      height: 4px;
+      background-color: $gray-color;
+      margin: 22px 0;
+    }
+
+    & .calculator-slider-price #slider-price,
+    .calculator-slider-day #slider-day {
+      border: 0;
+      border-radius: 0;
+      transition: 0s;
+      height: 0;
+      margin: 0 18px;
+      background-color: $gray-color;
+      position: relative;
+
+      & span {
+        border: 0;
+        transition: 0s;
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        font-weight: normal;
+        background-color: $white;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: -18px;
+        z-index: 2;
+        cursor: default;
+        -ms-touch-action: none;
+        touch-action: none;
+        margin-left: -18px;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:active {
+          background-color: $white;
+        }
+      }
+    }
+
+    & #slider-price span {
+      background-image: url("../img/Slider_2_icon.png");
+    }
+
+    & #slider-day span {
+      background-image: url("../img/Slider_1_icon.png");
+    }
+
+    & .calculator-result .calculator-result-info {
+      border-radius: 14px;
+      background-color: #e5e5e5;
+      padding: 13px;
+      margin-bottom: 20px;
+
+      & .result-info-price,
+      .result-info-day {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .name {
+          color: #706f6f;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 22px;
+        }
+
+        & .value {
+          color: #706f6f;
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 22px;
+        }
+
+        & .promotional-price {
+          display: none;
+          color: $green-color;
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 22px;
+          margin-left: 10px;
+        }
+
+        & .not-active-price {
+          color: #de180f;
+          text-decoration: line-through;
+        }
+      }
+
+      & .result-info-price {
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+
+#js-choice-price,
+#js-choice-day {
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 100px;
+}

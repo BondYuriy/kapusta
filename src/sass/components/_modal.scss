@@ -1,0 +1,96 @@
+.modal {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.modal-content {
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+
+  & .modal-header {
+    border: 0;
+    padding: 10px 15px;
+
+    & .modal-title {
+      font-size: 26px;
+      color: $green-color;
+      font-weight: $Bold;
+    }
+  }
+
+  & .modal-body {
+    & form {
+      & .error-input {
+        display: none;
+        color: $white;
+        border-radius: 8px;
+        padding: 6px 10px;
+        background-color: rgba(255, 0, 0, 0.7);
+        margin-bottom: 10px;
+      }
+
+      & .isvalid-code {
+        display: none;
+        color: $green-color;
+        font-weight: $Bold;
+        margin: 10px 0;
+      }
+
+      & label {
+        display: block;
+      }
+
+      & input {
+        border: 0;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 36px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        color: $gray-color;
+        font-size: 16px;
+        font-weight: $Regular;
+        line-height: 32px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border: 2px solid rgba(255, 173, 0, 0);
+        padding: 0 10px;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border: 2px solid rgba(255, 173, 0, 1);
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      & .btn-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .btn {
+          display: block;
+        }
+
+        & .link-password {
+          display: inline-block;
+          color: #706f6f;
+          font-family: Akrobat;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 0.18px;
+          text-align: center;
+          border-bottom: 1px solid $gray-color;
+          padding-bottom: 3px;
+
+          &:hover {
+            color: $black-color;
+            border-bottom: 1px solid $black-color;
+          }
+        }
+      }
+    }
+  }
+}

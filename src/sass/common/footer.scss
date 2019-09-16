@@ -1,0 +1,66 @@
+/*=== footer ===*/
+
+.footer-mobile {
+  background-color: $blue-color;
+  padding: 12px;
+}
+
+.footer-contact {
+  color: $orange-color;
+  text-align: center;
+
+  & .phone {
+    display: block;
+
+    & a {
+      display: block;
+      color: #f9ae00;
+      font-size: 41px;
+      font-weight: $ExtraBold;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+  }
+
+  & .phone-info {
+    font-size: 23px;
+    font-weight: $Bold;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+
+.footer {
+  display: none;
+  padding: 60px 0;
+  background-color: $blue-color;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+
+  & .logo {
+    flex: 0 0 180px;
+    margin: 0;
+  }
+
+  & .footer-nav-box {
+    flex: 0 0 70%;
+    display: flex;
+    justify-content: space-between;
+
+    & .footer-nav {
+      & h3 {
+        font-size: 24px;
+        color: $white-text;
+        font-weight: $Bold;
+        margin-bottom: 15px;
+      }
+
+      & ul li a {
+        color: $white-text;
+      }
+    }
+  }
+}
