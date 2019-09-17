@@ -1,5 +1,7 @@
 .calculator-box {
-  padding-top: 74px;
+  text-align: center;
+  padding: 74px 0 18px 0;
+  background-color: $blue-color;
 
   & .calculator-box-bi .home-bi,
   .home-bi-mobile {
@@ -15,20 +17,23 @@
 
 .calculator-info {
   position: absolute;
-  top: -70px;
+  top: -106px;
   right: 20px;
+  transform: rotate(-20deg);
 
   & .title-mobile {
     margin: 0;
-    color: #706f6f;
-    font-size: 19px;
-    font-weight: $Regular;
+    text-shadow: -2px 3px 8px #010101;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
     line-height: 22px;
     text-transform: uppercase;
+    text-align: right;
 
     & strong {
-      font-size: 30px;
-      font-weight: 700;
+      font-size: 22px;
+      font-weight: 400;
     }
   }
 }
@@ -45,32 +50,31 @@
     .calculator-slider-day {
       & .calculator-slider-info {
         display: flex;
+        justify-content: center;
         align-items: flex-end;
-        color: $green-color;
-        font-size: 26px;
-        font-weight: 700;
+        color: $red-color;
+        font-size: 23px;
+        font-weight: 400;
 
         & label {
           margin: 0;
           display: block;
-          margin-right: auto;
-          text-transform: uppercase;
+          margin-right: 5px;
         }
 
         & input {
           border: 0;
-          width: 90px;
-          height: 36px;
-          border-radius: 8px;
+          width: 80px;
+          height: 32px;
+          box-shadow: inset -1px 2px 5px rgba(1, 1, 1, 0.35);
           text-align: center;
-          margin: 0 10px 5px 0;
-          color: $orange-color;
-          font-size: 34px;
-          font-weight: 900;
-          line-height: 36px;
+          margin: 0 5px 5px 0;
+          color: #ffffff;
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 32px;
           text-transform: uppercase;
-          background-color: rgba(0, 0, 0, 0.05);
-          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+          background-color: $red-color;
 
           &:focus {
             outline: none;
@@ -86,9 +90,10 @@
     & .slider-scroll {
       border: 0;
       border-radius: 0;
-      height: 4px;
-      background-color: $gray-color;
-      margin: 22px 0;
+      height: 40px;
+      background-image: url("../img/shkala.svg");
+      background-repeat: no-repeat;
+      margin: 5px 0;
     }
 
     & .calculator-slider-price #slider-price,
@@ -105,43 +110,29 @@
         border: 0;
         transition: 0s;
         display: block;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        font-weight: normal;
-        background-color: $white;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/kapusta.svg");
+        background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: 180%;
         position: absolute;
-        top: -18px;
+        top: 0;
         z-index: 2;
         cursor: default;
         -ms-touch-action: none;
         touch-action: none;
-        margin-left: -18px;
+        margin-left: -20px;
         cursor: pointer;
 
         &:focus {
           outline: none;
         }
-
-        &:active {
-          background-color: $white;
-        }
       }
     }
 
-    & #slider-price span {
-      background-image: url("../img/Slider_2_icon.png");
-    }
-
-    & #slider-day span {
-      background-image: url("../img/Slider_1_icon.png");
-    }
-
     & .calculator-result .calculator-result-info {
-      border-radius: 14px;
-      background-color: #e5e5e5;
+      background-color: $green-color;
       padding: 13px;
       margin-bottom: 20px;
 
@@ -152,14 +143,14 @@
         align-items: center;
 
         & .name {
-          color: #706f6f;
+          color: $white-text;
           font-size: 18px;
           font-weight: 700;
           line-height: 22px;
         }
 
         & .value {
-          color: #706f6f;
+          color: $white-text;
           font-size: 20px;
           font-weight: 800;
           line-height: 22px;
@@ -167,7 +158,7 @@
 
         & .promotional-price {
           display: none;
-          color: $green-color;
+          color: $white-text;
           font-size: 20px;
           font-weight: 800;
           line-height: 22px;

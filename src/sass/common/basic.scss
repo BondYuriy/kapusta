@@ -32,20 +32,16 @@ button:focus {
 
 .link-promocode {
   display: inline-block;
-  color: #706f6f;
+  color: $red-color !important;
   font-family: Akrobat;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0.18px;
   text-align: center;
-  border-bottom: 1px solid $gray-color;
-  padding-bottom: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   &:hover {
-    color: $black-color;
-    border-bottom: 1px solid $black-color;
+    color: $black-color !important;
   }
 }
 
