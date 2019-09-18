@@ -1,13 +1,13 @@
 .slogan {
-  background-color: $orange-color;
+  background-color: $green-color;
   padding: 7px 0;
   margin: 20px 0;
 
   & p {
     margin: 0;
-    color: #434039;
-    font-size: 22px;
-    font-weight: 700;
+    color: $white-text;
+    font-size: 20px;
+    font-weight: $Bold;
     line-height: 22px;
     text-transform: uppercase;
     text-align: center;

@@ -1,6 +1,13 @@
+/* === calculator-box === */
+
 @media (min-width: 1200px) {
-  .desctop-not-active {
-    display: none;
+  .title-section,
+  .title-section a {
+    padding: 0;
+    color: $red-color;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: left;
   }
 }
 
@@ -57,14 +64,16 @@
 
     & .header-contact {
       display: block;
+      padding-top: 17px;
 
       & .phone {
         display: block;
 
         & a {
           color: $red-color;
-          font-size: 70px;
+          font-size: 55px;
           line-height: 70px;
+          font-weight: $Bold;
         }
       }
 
@@ -72,6 +81,7 @@
         color: #b2b2b2;
         font-size: 28px;
         font-weight: 400;
+        line-height: 20px;
       }
     }
 
@@ -96,7 +106,7 @@
       align-self: flex-start;
 
       & .personal-area-box {
-        margin-bottom: 25px;
+        margin-bottom: 36px;
 
         & .personal-area-desc {
           display: block;
@@ -110,9 +120,7 @@
           font-weight: 400;
           line-height: 23px;
           text-transform: uppercase;
-          padding-top: 22px;
-          padding-left: 20px;
-          padding-right: 20px;
+          padding: 20px 20px 0 20px;
         }
 
         & .personal-area-mobile {
@@ -183,8 +191,8 @@
   .article p {
     font-size: 16px;
     line-height: 20px;
-    font-weight: $Bold;
-    color: #999999;
+    font-weight: $Regular;
+    color: $text-color;
   }
 }
 
@@ -192,6 +200,8 @@
 
 @media (min-width: 1200px) {
   .calculator-box {
+    background-color: $white;
+    padding: 0;
     position: relative;
     padding-top: 200px;
     overflow: hidden;
@@ -251,7 +261,7 @@
           box-shadow: 6px 6px 0 rgba(1, 1, 1, 0.45);
           color: #000000;
           font-size: 28px;
-          font-weight: 400;
+          font-weight: $Bold;
           line-height: 32px;
           text-transform: uppercase;
           text-align: center;
@@ -265,12 +275,136 @@
     }
 
     & .calculator-slider-box {
-      flex: 0 0 75%;
-    }
+      flex: 0 0 80%;
+      padding-top: 100px;
 
-    & .calculator-slider-price,
-    .calculator-slider-day,
-    .calculator-result {
+      & .calculator-slider-price,
+      .calculator-slider-day {
+        position: relative;
+
+        & .calculator-slider-info {
+          justify-content: flex-start;
+          align-items: center;
+
+          & label,
+          span {
+            text-shadow: 6px 6px 25px #010101;
+            color: $white;
+            font-size: 40px;
+            text-transform: uppercase;
+          }
+
+          & input {
+            margin: 0;
+            width: 600px;
+            height: 112px;
+            border-radius: 100px;
+            line-height: 112px;
+            background-color: $white;
+            box-shadow: 7px 7px 50px #010101;
+            margin: 0 20px;
+            color: $red-color;
+            font-size: 50px;
+            text-align: right;
+            padding-right: 25px;
+          }
+        }
+
+        & .slider-scroll {
+          width: 45%;
+          height: 45px;
+          position: absolute;
+          left: 21%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        & #slider-day span,
+        #slider-price span {
+          display: block;
+          width: 60px;
+          height: 60px;
+          top: -20px;
+          margin-left: -35px;
+        }
+      }
+
+      & .calculator-slider-price {
+        margin-bottom: 60px;
+      }
+
+      & .calculator-slider-day {
+        margin-bottom: 90px;
+      }
+
+      & .calculator-result {
+        width: 600px;
+        height: 224px;
+        border-radius: 60px;
+        box-shadow: 7px 7px 50px #010101;
+        background-color: rgba(255, 255, 255, 0.65);
+        position: relative;
+        margin-left: 150px;
+
+        & .calculator-result-info {
+          width: 60%;
+          background-color: rgba(255, 255, 255, 0);
+          padding: 33px 0 0 30px;
+
+          & .result-info-price,
+          .result-info-day {
+            & .name {
+              flex: 0 0 45%;
+              text-align: right;
+              color: $text-color;
+              font-weight: $Bold;
+            }
+
+            & .value {
+              flex: 0 0 50%;
+              text-align-last: left;
+              color: $text-color;
+
+              & .promotional-price {
+                color: $green-color;
+              }
+            }
+          }
+        }
+
+        & .link-promocode {
+          width: 60%;
+          text-align-last: left;
+        }
+
+        & .btn {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          box-shadow: 6px 6px 0 rgba(1, 1, 1, 0.45);
+          position: absolute;
+          right: -75px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: $red-color;
+          text-align: center;
+
+          & span {
+            flex: 0 0 100%;
+            color: $white;
+            font-size: 47px;
+            line-height: 58px;
+          }
+
+          &::before {
+            display: none;
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 }
@@ -295,7 +429,7 @@
     }
 
     & .section-info-list {
-      flex: 0 0 70%;
+      flex: 0 0 67%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -336,10 +470,26 @@
       margin: 0;
       flex: 0 0 32%;
       display: block;
-      text-align: center;
+      align-items: flex-start;
 
-      & .item-num {
-        display: none;
+      // & .item-content-img {
+      //   display: none;
+      // }
+
+      & .item-num::after {
+        right: 20px;
+      }
+
+      & .item-content-info {
+        & .title {
+          color: #3c3c3b;
+          font-size: 24px;
+          font-weight: $Bold;
+          line-height: 32px;
+          text-align: left;
+          font-family: $Avant;
+          text-transform: none;
+        }
       }
     }
   }
@@ -354,5 +504,18 @@
 
   .footer {
     display: block;
+  }
+}
+
+/* === home page === */
+@media (min-width: 1200px) {
+  .blue-wrapper {
+    background-color: $white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .desctop-not-active {
+    display: none !important;
   }
 }

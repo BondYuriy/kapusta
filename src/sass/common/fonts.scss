@@ -1,54 +1,35 @@
 @font-face {
-  font-family: "Akrobat";
-  src: url("../fonts/Akrobat-Light.eot");
-  src: url("../fonts/Akrobat-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Akrobat-Light.woff2") format("woff2"),
-    url("../fonts/Akrobat-Light.woff") format("woff"),
-    url("../fonts/Akrobat-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "AvantGardeGothicCTT";
+  src: url("../fonts/AvantGardeGothicC-Book.woff2") format("woff2"),
+    url("../fonts/AvantGardeGothicC-Book.woff") format("woff"),
+    url("../fonts/AvantGardeGothicC-Book.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Akrobat";
-  src: url("../fonts/Akrobat-Regular.eot");
-  src: url("../fonts/Akrobat-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Akrobat-Regular.woff2") format("woff2"),
-    url("../fonts/Akrobat-Regular.woff") format("woff"),
-    url("../fonts/Akrobat-Regular.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Akrobat";
-  src: url("../fonts/Akrobat-Bold.eot");
-  src: url("../fonts/Akrobat-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Akrobat-Bold.woff2") format("woff2"),
-    url("../fonts/Akrobat-Bold.woff") format("woff"),
-    url("../fonts/Akrobat-Bold.ttf") format("truetype");
+  font-family: "AvantGardeGothicCTT";
+  src: url("../fonts/AvantGardeGothicC-Demi.woff2") format("woff2"),
+    url("../fonts/AvantGardeGothicC-Demi.woff") format("woff"),
+    url("../fonts/AvantGardeGothicC-Demi.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Akrobat";
-  src: url("../fonts/Akrobat-ExtraBold.eot");
-  src: url("../fonts/Akrobat-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Akrobat-ExtraBold.woff2") format("woff2"),
-    url("../fonts/Akrobat-ExtraBold.woff") format("woff"),
-    url("../fonts/Akrobat-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
+  font-family: "Intro";
+  src: url("../fonts/Intro.woff2") format("woff2"),
+    url("../fonts/Intro.woff") format("woff"),
+    url("../fonts/Intro.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Akrobat";
-  src: url("../fonts/Akrobat-Black.eot");
-  src: url("../fonts/Akrobat-Black.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Akrobat-Black.woff2") format("woff2"),
-    url("../fonts/Akrobat-Black.woff") format("woff"),
-    url("../fonts/Akrobat-Black.ttf") format("truetype");
-  font-weight: 900;
+  font-family: "HeliosCond";
+  src: url("../fonts/HeliosCond.woff2") format("woff2"),
+    url("../fonts/HeliosCond.woff") format("woff"),
+    url("../fonts/HeliosCond.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }

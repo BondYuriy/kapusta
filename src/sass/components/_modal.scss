@@ -4,7 +4,7 @@
 
 .modal-content {
   border: 0;
-  border-radius: 15px;
+  border-radius: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
 
   & .modal-header {
@@ -13,7 +13,7 @@
 
     & .modal-title {
       font-size: 26px;
-      color: $green-color;
+      color: $red-color;
       font-weight: $Bold;
     }
   }
@@ -23,7 +23,7 @@
       & .error-input {
         display: none;
         color: $white;
-        border-radius: 8px;
+        border-radius: 0;
         padding: 6px 10px;
         background-color: rgba(255, 0, 0, 0.7);
         margin-bottom: 10px;
@@ -46,20 +46,20 @@
         width: 100%;
         margin-bottom: 20px;
         height: 36px;
-        border-radius: 8px;
+        border-radius: 0;
         margin-bottom: 20px;
         color: $gray-color;
         font-size: 16px;
         font-weight: $Regular;
         line-height: 32px;
-        background-color: rgba(0, 0, 0, 0.05);
-        border: 2px solid rgba(255, 173, 0, 0);
+        background-color: rgba(140, 213, 225, 0.2);
+        border: 2px solid rgba(140, 213, 225, 0);
         padding: 0 10px;
 
         &:focus {
           outline: none;
           box-shadow: none;
-          border: 2px solid rgba(255, 173, 0, 1);
+          border: 2px solid rgba(140, 213, 225, 1);
           background-color: rgba(255, 255, 255, 1);
         }
       }
