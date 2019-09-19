@@ -11003,12 +11003,12 @@ body.sticky-header .header-box .user-options .languages {
 }
 
 .calculator-content .calculator-slider-box .calculator-slider-day {
-	margin-bottom: 90px;
+	margin-bottom: 110px;
 }
 
 .calculator-content .calculator-slider-box .calculator-result {
 	width: 600px;
-	height: 224px;
+	height: 180px;
 	border-radius: 60px;
 	box-shadow: 7px 7px 50px #010101;
 	background-color: rgba(255, 255, 255, 0.65);
