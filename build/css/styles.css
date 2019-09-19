@@ -7533,10 +7533,9 @@ button:focus {
 .modal-content .modal-body form .btn-box .link-password {
 	display: inline-block;
 	color: #706f6f;
-	font-family: Akrobat;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 22px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
 	letter-spacing: 0.18px;
 	text-align: center;
 	border-bottom: 1px solid #706f6f;
@@ -10843,18 +10842,27 @@ body.sticky-header .header-box .user-options .languages {
 	z-index: -1;
 }
 
+.article {
+	padding: 30px 0;
+}
+
+.article .title-section {
+	display: none;
+}
+
 .article p {
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: normal;
 	color: #575756;
+	margin-bottom: 10px;
 }
 
 .calculator-box {
 	background-color: #fff;
 	padding: 0;
 	position: relative;
-	padding-top: 200px;
+	padding-top: 0;
 	overflow: hidden;
 }
 
@@ -10864,8 +10872,9 @@ body.sticky-header .header-box .user-options .languages {
 }
 
 .calculator-box .calculator-box-bi {
+	width: 100%;
 	position: absolute;
-	height: 880px;
+	height: 1080px;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
@@ -10885,12 +10894,12 @@ body.sticky-header .header-box .user-options .languages {
 .calculator-content {
 	margin: 0;
 	padding: 0;
-	height: 880px;
+	height: 1080px;
 	position: relative;
 	z-index: 3;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 50px;
+	padding-top: 250px;
 }
 
 .calculator-content .nav-header-desc {
@@ -11106,7 +11115,36 @@ body.sticky-header .header-box .user-options .languages {
 	height: 80px;
 	margin-bottom: 10px;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+}
+
+.section-info .section-info-list .section-item .item-content-img svg {
+	fill: #fff;
+}
+
+.section-info .section-info-list .section-item .item-content-img #Layer_106 {
+	stroke: #fff;
+}
+
+.section-info .section-info-list .section-item .item-content-info .title {
+	color: #3c3c3b;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 28px;
+	text-align: left;
+	font-family: "AvantGardeGothicCTT", sans-serif;
+	text-transform: none;
+	margin-bottom: 14px;
+}
+
+.section-info .section-info-list .section-item .item-content-info .text {
+	color: #3c3c3b;
+	font-family: "AvantGardeGothicCTT", sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 20px;
+	text-align: left;
+	text-transform: none;
 }
 
 .section-info .desc-five-item .section-item {
@@ -11125,23 +11163,17 @@ body.sticky-header .header-box .user-options .languages {
 
 .section-info .desc-three-item .section-item {
 	margin: 0;
-	flex: 0 0 32%;
+	flex: 0 0 31%;
 	display: block;
 	align-items: flex-start;
 }
 
-.section-info .desc-three-item .section-item .item-num::after {
-	right: 20px;
+.section-info .desc-three-item .section-item .item-num {
+	padding: 0 20px;
 }
 
-.section-info .desc-three-item .section-item .item-content-info .title {
-	color: #3c3c3b;
-	font-size: 24px;
-	font-weight: bold;
-	line-height: 32px;
-	text-align: left;
-	font-family: "AvantGardeGothicCTT", sans-serif;
-	text-transform: none;
+.section-info .desc-three-item .section-item .item-num::after {
+	right: 50px;
 }
 
 .footer-mobile {
@@ -11150,6 +11182,18 @@ body.sticky-header .header-box .user-options .languages {
 
 .footer {
 	display: block;
+}
+
+.footer-box .footer-nav-box .footer-nav h3 {
+	color: #575756;
+}
+
+.footer-box .footer-nav-box .footer-nav ul li a {
+	color: #575756;
+}
+
+.footer-box .footer-nav-box .footer-nav ul li a:hover {
+	color: #fff;
 }
 
 .blue-wrapper {
@@ -11293,6 +11337,14 @@ body.sticky-header .header {
 .navbar-expand-sm > .container-fluid {
 	padding-right: 0;
 	padding-left: 0;
+}
+
+}
+
+@media (max-width: 575px) {
+
+.mobile-not-active {
+	display: none !important;
 }
 
 }
