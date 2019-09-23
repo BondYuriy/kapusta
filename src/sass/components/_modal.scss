@@ -93,3 +93,11 @@
     }
   }
 }
+
+.calculator-modal-style {
+  margin: 0;
+
+  & .calculator-slider-box .slider-scroll {
+    height: 53px;
+  }
+}

@@ -6750,6 +6750,10 @@ a.text-dark:focus {
 	margin-top: 90px;
 }
 
+.mt-230 {
+	margin-top: 230px;
+}
+
 /*------- margin-bottom ---------*/
 
 .mb-20 {
@@ -6880,7 +6884,8 @@ button:focus {
 	box-shadow: none;
 }
 
-.btn-white {
+.btn-white,
+.btn-white-border {
 	margin: auto;
 	width: 285px;
 	height: 88px;
@@ -6896,19 +6901,22 @@ button:focus {
 	align-items: center;
 }
 
-.btn-white span {
+.btn-white span,
+.btn-white-border span {
 	transition: 0s;
 	display: block;
 	flex: 0 0 auto;
 }
 
-.btn-white span strong {
+.btn-white span strong,
+.btn-white-border span strong {
 	display: block;
 	font-size: 44px;
 	line-height: 40px;
 }
 
-.btn-white::before {
+.btn-white::before,
+.btn-white-border::before {
 	display: inline-block;
 	content: "";
 	flex: 0 0 84px;
@@ -6921,9 +6929,16 @@ button:focus {
 	margin-right: 9px;
 }
 
-.btn-white:hover {
+.btn-white:hover,
+.btn-white-border:hover {
 	color: #289b38;
 	opacity: 0.8;
+}
+
+.btn-white-border {
+	height: 96px;
+	border-radius: 50px;
+	border: 3px solid #289b38;
 }
 
 .btn-green-small {
@@ -7547,6 +7562,14 @@ button:focus {
 	border-bottom: 1px solid #000;
 }
 
+.calculator-modal-style {
+	margin: 0;
+}
+
+.calculator-modal-style .calculator-slider-box .slider-scroll {
+	height: 53px;
+}
+
 /*=== home page ===*/
 
 main {
@@ -7570,6 +7593,8 @@ main {
 /* === footer === */
 
 /* === home page === */
+
+/* === modal === */
 
 @media screen and (prefers-reduced-motion: reduce) {
 
@@ -10891,7 +10916,7 @@ body.sticky-header .header-box .user-options .languages {
 	display: none;
 }
 
-.calculator-content {
+.calculator-desc-style {
 	margin: 0;
 	padding: 0;
 	height: 1080px;
@@ -10902,20 +10927,20 @@ body.sticky-header .header-box .user-options .languages {
 	padding-top: 250px;
 }
 
-.calculator-content .nav-header-desc {
+.calculator-desc-style .nav-header-desc {
 	display: block;
 	flex: 0 0 17%;
 }
 
-.calculator-content .nav-header-desc ul li {
+.calculator-desc-style .nav-header-desc ul li {
 	margin-bottom: 25px;
 }
 
-.calculator-content .nav-header-desc ul li:last-child {
+.calculator-desc-style .nav-header-desc ul li:last-child {
 	margin-bottom: 0;
 }
 
-.calculator-content .nav-header-desc ul li a {
+.calculator-desc-style .nav-header-desc ul li a {
 	display: block;
 	width: 182px;
 	height: 182px;
@@ -10931,38 +10956,38 @@ body.sticky-header .header-box .user-options .languages {
 	line-height: 182px;
 }
 
-.calculator-content .nav-header-desc ul li a:hover {
+.calculator-desc-style .nav-header-desc ul li a:hover {
 	opacity: 0.9;
 }
 
-.calculator-content .calculator-slider-box {
+.calculator-desc-style .calculator-slider-box {
 	flex: 0 0 80%;
 	padding-top: 100px;
 }
 
-.calculator-content .calculator-slider-box .calculator-slider-price,
-.calculator-content .calculator-slider-box .calculator-slider-day {
+.calculator-desc-style .calculator-slider-box .calculator-slider-price,
+.calculator-desc-style .calculator-slider-box .calculator-slider-day {
 	position: relative;
 }
 
-.calculator-content .calculator-slider-box .calculator-slider-price .calculator-slider-info,
-.calculator-content .calculator-slider-box .calculator-slider-day .calculator-slider-info {
+.calculator-desc-style .calculator-slider-box .calculator-slider-price .calculator-slider-info,
+.calculator-desc-style .calculator-slider-box .calculator-slider-day .calculator-slider-info {
 	justify-content: flex-start;
 	align-items: center;
 }
 
-.calculator-content .calculator-slider-box .calculator-slider-price .calculator-slider-info label,
-.calculator-content .calculator-slider-box .calculator-slider-price .calculator-slider-info span,
-.calculator-content .calculator-slider-box .calculator-slider-day .calculator-slider-info label,
-.calculator-content .calculator-slider-box .calculator-slider-day .calculator-slider-info span {
+.calculator-desc-style .calculator-slider-box .calculator-slider-price .calculator-slider-info label,
+.calculator-desc-style .calculator-slider-box .calculator-slider-price .calculator-slider-info span,
+.calculator-desc-style .calculator-slider-box .calculator-slider-day .calculator-slider-info label,
+.calculator-desc-style .calculator-slider-box .calculator-slider-day .calculator-slider-info span {
 	text-shadow: 6px 6px 25px #010101;
 	color: #fff;
 	font-size: 40px;
 	text-transform: uppercase;
 }
 
-.calculator-content .calculator-slider-box .calculator-slider-price .calculator-slider-info input,
-.calculator-content .calculator-slider-box .calculator-slider-day .calculator-slider-info input {
+.calculator-desc-style .calculator-slider-box .calculator-slider-price .calculator-slider-info input,
+.calculator-desc-style .calculator-slider-box .calculator-slider-day .calculator-slider-info input {
 	margin: 0;
 	width: 600px;
 	height: 112px;
@@ -10977,8 +11002,8 @@ body.sticky-header .header-box .user-options .languages {
 	padding-right: 25px;
 }
 
-.calculator-content .calculator-slider-box .calculator-slider-price .slider-scroll,
-.calculator-content .calculator-slider-box .calculator-slider-day .slider-scroll {
+.calculator-desc-style .calculator-slider-box .calculator-slider-price .slider-scroll,
+.calculator-desc-style .calculator-slider-box .calculator-slider-day .slider-scroll {
 	width: 45%;
 	height: 45px;
 	position: absolute;
@@ -10987,10 +11012,10 @@ body.sticky-header .header-box .user-options .languages {
 	transform: translateY(-50%);
 }
 
-.calculator-content .calculator-slider-box .calculator-slider-price #slider-day span,
-.calculator-content .calculator-slider-box .calculator-slider-price #slider-price span,
-.calculator-content .calculator-slider-box .calculator-slider-day #slider-day span,
-.calculator-content .calculator-slider-box .calculator-slider-day #slider-price span {
+.calculator-desc-style .calculator-slider-box .calculator-slider-price #slider-day span,
+.calculator-desc-style .calculator-slider-box .calculator-slider-price #slider-price span,
+.calculator-desc-style .calculator-slider-box .calculator-slider-day #slider-day span,
+.calculator-desc-style .calculator-slider-box .calculator-slider-day #slider-price span {
 	display: block;
 	width: 60px;
 	height: 60px;
@@ -10998,15 +11023,15 @@ body.sticky-header .header-box .user-options .languages {
 	margin-left: -35px;
 }
 
-.calculator-content .calculator-slider-box .calculator-slider-price {
+.calculator-desc-style .calculator-slider-box .calculator-slider-price {
 	margin-bottom: 60px;
 }
 
-.calculator-content .calculator-slider-box .calculator-slider-day {
+.calculator-desc-style .calculator-slider-box .calculator-slider-day {
 	margin-bottom: 110px;
 }
 
-.calculator-content .calculator-slider-box .calculator-result {
+.calculator-desc-style .calculator-slider-box .calculator-result {
 	width: 600px;
 	height: 180px;
 	border-radius: 60px;
@@ -11016,40 +11041,40 @@ body.sticky-header .header-box .user-options .languages {
 	margin-left: 150px;
 }
 
-.calculator-content .calculator-slider-box .calculator-result .calculator-result-info {
+.calculator-desc-style .calculator-slider-box .calculator-result .calculator-result-info {
 	width: 60%;
 	background-color: rgba(255, 255, 255, 0);
 	padding: 33px 0 0 30px;
 }
 
-.calculator-content .calculator-slider-box .calculator-result .calculator-result-info .result-info-price .name,
-.calculator-content .calculator-slider-box .calculator-result .calculator-result-info .result-info-day .name {
+.calculator-desc-style .calculator-slider-box .calculator-result .calculator-result-info .result-info-price .name,
+.calculator-desc-style .calculator-slider-box .calculator-result .calculator-result-info .result-info-day .name {
 	flex: 0 0 45%;
 	text-align: right;
 	color: #575756;
 	font-weight: bold;
 }
 
-.calculator-content .calculator-slider-box .calculator-result .calculator-result-info .result-info-price .value,
-.calculator-content .calculator-slider-box .calculator-result .calculator-result-info .result-info-day .value {
+.calculator-desc-style .calculator-slider-box .calculator-result .calculator-result-info .result-info-price .value,
+.calculator-desc-style .calculator-slider-box .calculator-result .calculator-result-info .result-info-day .value {
 	flex: 0 0 50%;
 	-moz-text-align-last: left;
 	text-align-last: left;
 	color: #575756;
 }
 
-.calculator-content .calculator-slider-box .calculator-result .calculator-result-info .result-info-price .value .promotional-price,
-.calculator-content .calculator-slider-box .calculator-result .calculator-result-info .result-info-day .value .promotional-price {
+.calculator-desc-style .calculator-slider-box .calculator-result .calculator-result-info .result-info-price .value .promotional-price,
+.calculator-desc-style .calculator-slider-box .calculator-result .calculator-result-info .result-info-day .value .promotional-price {
 	color: #289b38;
 }
 
-.calculator-content .calculator-slider-box .calculator-result .link-promocode {
+.calculator-desc-style .calculator-slider-box .calculator-result .link-promocode {
 	width: 60%;
 	-moz-text-align-last: left;
 	text-align-last: left;
 }
 
-.calculator-content .calculator-slider-box .calculator-result .btn {
+.calculator-desc-style .calculator-slider-box .calculator-result .btn {
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
@@ -11062,18 +11087,18 @@ body.sticky-header .header-box .user-options .languages {
 	text-align: center;
 }
 
-.calculator-content .calculator-slider-box .calculator-result .btn span {
+.calculator-desc-style .calculator-slider-box .calculator-result .btn span {
 	flex: 0 0 100%;
 	color: #fff;
 	font-size: 47px;
 	line-height: 58px;
 }
 
-.calculator-content .calculator-slider-box .calculator-result .btn::before {
+.calculator-desc-style .calculator-slider-box .calculator-result .btn::before {
 	display: none;
 }
 
-.calculator-content .calculator-slider-box .calculator-result .btn:hover {
+.calculator-desc-style .calculator-slider-box .calculator-result .btn:hover {
 	opacity: 1;
 }
 
@@ -11202,6 +11227,26 @@ body.sticky-header .header-box .user-options .languages {
 
 .desctop-not-active {
 	display: none !important;
+}
+
+.calculator-modal-style .calculator-slider-box .calculator-slider-price #slider-price span,
+.calculator-modal-style .calculator-slider-box .calculator-slider-day #slider-day span {
+	border: 0;
+	transition: 0s;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/kapusta.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 180%;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	cursor: default;
+	touch-action: none;
+	margin-left: -20px;
+	cursor: pointer;
 }
 
 }

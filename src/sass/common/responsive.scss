@@ -241,7 +241,7 @@
     display: none;
   }
 
-  .calculator-content {
+  .calculator-desc-style {
     margin: 0;
     padding: 0;
     height: 1080px;
@@ -568,5 +568,31 @@
 @media (max-width: 575px) {
   .mobile-not-active {
     display: none !important;
+  }
+}
+
+/* === modal === */
+
+@media (min-width: 1200px) {
+  .calculator-modal-style {
+    & .calculator-slider-box .calculator-slider-price #slider-price span,
+    .calculator-slider-box .calculator-slider-day #slider-day span {
+      border: 0;
+      transition: 0s;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/kapusta.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 180%;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      cursor: default;
+      touch-action: none;
+      margin-left: -20px;
+      cursor: pointer;
+    }
   }
 }
