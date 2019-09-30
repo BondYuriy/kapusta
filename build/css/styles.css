@@ -6816,11 +6816,26 @@ a.text-dark:focus {
 	transition: 0.5s;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: "AvantGardeGothicCTT", sans-serif;
 	font-weight: normal;
 	font-size: 16px;
 	color: #575756;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+main {
+	flex-grow: 1;
+}
+
+footer {
+	flex-grow: 0;
 }
 
 ul,

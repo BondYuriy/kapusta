@@ -4,11 +4,26 @@
   transition: 0.5s;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: $Avant;
   font-weight: $Regular;
   font-size: $font-text;
   color: $text-color;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-grow: 0;
 }
 
 ul,
