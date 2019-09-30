@@ -26,6 +26,7 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  transition: 0.5s;
 
   & span {
     transition: 0s;
@@ -54,7 +55,8 @@
 
   &:hover {
     color: $green-color;
-    opacity: 0.8;
+    box-shadow: -2px 3px 0 rgba(1, 1, 1, 0.25);
+    transform: translate(-5px, 5px);
   }
 }
 

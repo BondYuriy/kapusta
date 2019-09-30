@@ -42,10 +42,6 @@
 .calculator-content {
   margin-top: 22px;
 
-  & .nav-header-desc {
-    display: none;
-  }
-
   & .calculator-slider-box {
     & .calculator-slider-price,
     .calculator-slider-day {
@@ -186,4 +182,8 @@
   padding: 0;
   height: 100px;
   width: 100px;
+}
+
+.nav-header-desc {
+  display: none;
 }

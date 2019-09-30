@@ -1,0 +1,38 @@
+.questions {
+  padding: 100px 15px 50px 15px;
+  text-align: center;
+
+  & h1 {
+    color: $black-color;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  & .accordion {
+    margin-bottom: 70px;
+
+    & .card {
+      border: 0;
+      margin-bottom: 15px;
+
+      &:hover {
+        box-shadow: 0px 4px 10px rgba(135, 135, 135, 0.16) !important;
+      }
+
+      & .card-header {
+        border: 0;
+        background-color: #fff;
+
+        & .btn {
+          color: $red-color;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 26px;
+          white-space: normal;
+        }
+      }
+    }
+  }
+}
